@@ -50,7 +50,8 @@ void demo(const char* img_path) {
     // reading image
     Mat img = imread(img_path);
 
-    constexpr auto win_name = "edges detect demo";
+    constexpr auto win_name =
+        "Edge-detect demo | Press [Enter] to see next slide";
 
     cv::namedWindow(win_name, cv::WINDOW_NORMAL);
 
