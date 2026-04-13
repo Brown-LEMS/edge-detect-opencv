@@ -11,9 +11,7 @@ cd <name>
 cmake -S . -B build -DCMAKE_PREFIX_PATH="/path/to/opencv/build"
 cmake --build build -j$(nproc)
 ```
-3. This executable currently runs a demo of 3 variations of Sobel edges (dx, dy, dxdy) and Canny edges
-Usage
-_____
+3. This executable currently runs a demo of 3 variations of Sobel edges (dx, dy, dxdy) and Canny edges. Usage:
 ```bash
 ./build/edt <path/to/image>
 # or, no argument and just use the default image:
