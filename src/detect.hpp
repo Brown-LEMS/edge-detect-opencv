@@ -27,8 +27,11 @@ enum class SobelDir : uint8_t { dx, dy, dxdy };
 /// - image can be closed by pressing any key
 void display_and_wait_on_window(const std::string& win_name, const Mat& img);
 
-/// runs the demo
-void demo(const char* img_path);
+/// runs the demo for sobel & canny edge detection
+void sobel_canny_demo(const char* img_path);
+
+/// runs the demo for structured forest edges
+int structured_edges_demo(int argc, char** argv);
 
 } // namespace edt
 

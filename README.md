@@ -11,9 +11,12 @@ cd edge-detect-opencv
 cmake -S . -B build -DCMAKE_PREFIX_PATH="/path/to/opencv/build"
 cmake --build build -j$(nproc)
 ```
-3. This executable currently runs a demo of 3 variations of Sobel edges (dx, dy, dxdy) and Canny edges. Usage:
+3. Download the Structured Forest Edge model from [here](https://github.com/opencv/opencv_extra/blob/master/testdata/cv/ximgproc/model.yml.gz)
+4. This executable runs a demo either outputting edges to a file or displaying them on a window. Usage (argument order must match):
 ```bash
-./build/edt <path/to/image>
-# or, no argument and just use the default image:
-./build/edt
+# to output edges to a file:
+./build/edt -m <model_name> -i <input_img> -o <output_name>
+
+# show on window
+./build/edt -m <model_name> -i <input_img> -s
 ```

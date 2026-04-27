@@ -9,6 +9,9 @@ compile_commands.json
 CMakeFiles/
 CMakeCache.txt
 
+model*
+out*
+
 __*
 
 # ide files
